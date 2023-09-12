@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="py-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Jogo da velha </title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="title"> JOGO DA VELHA </header> <!-- h1 esta dando problema no margin -->
+
+        <div class="board" data-board>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+
+        <div class="scoreArea">
+            <label class="placar">PLACAR</label><br><br>
+
+            <label>O: <label class="score" data-score-o>0</label></label><br>
+            <label>X: <label class="score" data-score-x>0</label></label><br>
+            <label>Velha: <label class="score" data-score-velha>0</label></label><br>
+        </div>
+
+        <div class="winning-message" data-winning-message>
+            <p class="winning-message-text" data-winning-message-text> X VENCEU! </p>
+            <button class="winning-message-button" data-restart-button> Reiniciar! </button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
